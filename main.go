@@ -9,8 +9,8 @@ import (
 	"strings"
 )
 
-var timeout, _ = strconv.Atoi(os.Getenv("TIMEOUT"))
-var retries, _ = strconv.Atoi(os.Getenv("RETRIES"))
+var timeout, _ = 5
+var retries, _ = 5
 var port = os.Getenv("PORT")
 
 var client *fasthttp.Client
